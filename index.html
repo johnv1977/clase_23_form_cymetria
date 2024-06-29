@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso UX / Form Estudiantes Cymetria</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="/images/Logo_horizontal_con_slogan_blanco.png" alt="">
+  </header>
+  <main>
+    <div class="container">
+      <h2>Regístrate!</h2>
+      <form action="" method="POST">
+        <fieldset>
+          <legend>Información Básica:</legend>
+          
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" required />
+
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="Ingresa tu Email" required />
+
+          <label for="password">Contraseña:</label>
+          <input id="password" name="password" type="password" placeholder="Ingresa tu contraseña" required />
+
+          <label>Mayor de edad:</label>
+          <div>
+            <label for="mayor-edad">
+              Sí
+              <input id="mayor-edad" type="radio" name="edad" value="mayor">
+            </label>
+            <label for="menor-edad">
+              No
+              <input id="menor-edad" type="radio" name="edad" value="menor">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información profesional:</legend>
+
+          <label for="mensaje">Perfil profesional:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+
+          <label for="programming-language">Rol profesional:</label>
+          <select name="programming-language" required>
+            <option value="" disabled selected>Escoje tu rol profesional</option>
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="nodejs">Node.js</option>
+            </optgroup>
+          </select>
+
+          <label for="">Intereses:</label>
+          <div>
+            <label>
+              <input type="checkbox" name="intereses" value="música"> Música
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" value="deportes"> Deportes
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" value="tecnología"> Tecnología
+            </label>
+          
+          </div>
+        
+
+        </fieldset>
+      
+        <input class="submit" type="submit" value="Enviar" />
+      </form>
+    </div>
+  </main>
+</body>
+</html>
