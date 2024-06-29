@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso UX / Form Estudiantes Cymetria</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img class="logo" src="/images/Logo_horizontal_con_slogan_blanco.png" alt="">
+    <p>Estudiantes de Cymetria</p>
   </header>
   <main>
     <div class="container">
       <form action="" method="POST">
 
-        <label for="nombre">Nombre:</label>
-        <input id="nombre" name="nombre" type="text" placeholder="Ingresa su nombre completo" required />
+        <label class="label-1" for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo" required />
 
-        <label for="email">Email:</label>
+        <label class="label-1" for="email">Email:</label>
         <input id="email" name="email" type="email" placeholder="Ej: username@correo.co" required />
 
-        <label>¿Qué curso estás tomando en Cymetria?</label>
+        <label id="curso">¿Qué curso estás tomando en Cymetria?</label>
         <label for="sql-server">
           <input id="sql-server" type="radio" name="curso" value="sql-server">
           SQL-SERVER
@@ -34,34 +35,34 @@
           FullStack
         </label>
 
-        <label>¿Cuales lenguajes de programación te gustaría seguir aprendiendo?</label>
+        <label id="curso">¿Cuales lenguajes de programación te gustaría seguir aprendiendo?</label>
         <label>
-          <input type="checkbox" name="intereses" value="python">
+          <input id="check" type="checkbox" name="intereses" value="python">
           Python
         </label>
         <label>
-          <input type="checkbox" name="intereses" value="javascript">
+          <input id="check" type="checkbox" name="intereses" value="javascript">
           JavaScript
         </label>
         <label>
-          <input type="checkbox" name="intereses" value="net">
+          <input id="check" type="checkbox" name="intereses" value="net">
           .Net
         </label>
         <label>
-          <input type="checkbox" name="intereses" value="java">
+          <input id="check" type="checkbox" name="intereses" value="java">
           Java
         </label>
         <label>
-          <input type="checkbox" name="intereses" value="nodejs">
+          <input id="check" type="checkbox" name="intereses" value="nodejs">
           NodeJs
         </label>
         <label>
-          <input type="checkbox" name="intereses" value="php">
+          <input id="check" type="checkbox" name="intereses" value="php">
           PHP
         </label>
 
         <div class="btns">
-          <input class="submit" type="reset" value="Cancelar"/>
+          <input class="cancel" type="reset" value="Cancelar"/>
           <input class="submit" type="submit" value="Enviar" />
         </div>
       </form>

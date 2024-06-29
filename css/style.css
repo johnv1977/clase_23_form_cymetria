@@ -1,9 +1,9 @@
 /* <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500,600,700&display=swap"> */
 
-* { font-family: 'Montserrat', sans-serif; }
+* { font-family: "Noto Sans", sans-serif;}
 
 body {
-  background-color: #26beb7;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -12,12 +12,17 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
-  padding: 20px 50px;
+  /* justify-content: center; */
+  padding: 20px 250px;
 }
 
 .logo {
   width: 20%;
+}
+
+.label-1{
+  font-weight: bold;
+  font-size: 18px;
 }
 
 main {
@@ -38,11 +43,6 @@ h1 {
   flex-direction: column;
   padding: 24px;
   width: 60%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
 }
 
 fieldset {
